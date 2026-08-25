@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+*.pyc
+data/processed/*.csv
+data/review/*.csv
+data/audit/*.csv
+reports/*.json
+dashboard/data/*.json
