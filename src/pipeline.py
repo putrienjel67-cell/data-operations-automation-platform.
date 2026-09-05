@@ -9,13 +9,13 @@ from pathlib import Path
 import pandas as pd
 import yaml
 
-from audit import build_change_log
-from dashboard import build_dashboard_payload, write_dashboard
-from history import append_run_history
-from intake import load_batch
-from master_match import match_to_master
-from quality import QualitySummary, score_records
-from reconciliation import find_possible_duplicates
+from .audit import build_change_log
+from .dashboard import build_dashboard_payload, write_dashboard
+from .history import append_run_history
+from .intake import load_batch
+from .master_match import match_to_master
+from .quality import QualitySummary, score_records
+from .reconciliation import find_possible_duplicates
 
 
 ROOT = Path(__file__).resolve().parents[1]
