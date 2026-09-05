@@ -2,6 +2,13 @@ name: Scheduled operations run
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'run_daily.py'
+      - 'config.yaml'
   schedule:
     - cron: '15 1 * * 1-5'
 
